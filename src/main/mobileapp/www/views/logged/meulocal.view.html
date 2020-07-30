@@ -1,0 +1,13 @@
+<ion-view class="pane">
+  <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar">
+    <div class="buttons buttons-left header-item">
+      <button class="button button-clear" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
+    </div>
+    <h1 class="title">Meu local</h1>
+    <div class="buttons buttons-right header-item">
+      <button class="button button-clear" menu-toggle="right" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
+    </div>
+  </ion-header-bar>
+  <ion-content data-component="crn-ion-content" class="scroll-content has-header">
+  <div class="item item-input component-holder" data-component="crn-input" id="crn-input-128938"><input aria-label="Aria Label Text" id="crn-input7323" type="text" placeholder="Latitude" ng-model="vars.lat" mask="" keyboard=""></div><div class="item item-input component-holder" data-component="crn-input" id="crn-input-219087"><input aria-label="Aria Label Text" id="crn-input3266" type="Text" placeholder="Longitude" ng-model="vars.long" mask="" keyboard=""></div><button class="button button-block button-positive component-holder" type="submit" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="cronapi.client('js.blockly.Meulocal.obterCoordenadas').run()" data-component="crn-button" id="crn-button-485045"><i class="ion ion-location"></i> <span>Obter coordenadas</span></button><button class="button button-block button-positive component-holder" type="submit" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="cronapi.client('js.blockly.Meulocal.desenharMapa').run()" data-component="crn-button" id="crn-button-127949"><i class="ion ion-location"></i> <span>Desenhar mapa</span></button><div class="component-holder ng-binding ng-scope" data-component="crn-google-maps" id="crn-google-maps-509884"><div id="map8045" token="AIzaSyCJhsJgO3KsbfpCNQyJ0gGVufZLR3cLBUo" style="height: 400px;" class=""></div></div></ion-content>
+</ion-view>

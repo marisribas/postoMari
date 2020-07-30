@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JAVA" ruleDescription="Abastecimento" ruleName="Abastecimento" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
+  <metadata scale="1" scrollx="450.40000000000015" scrolly="-88.49999999999989" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <mutation>
+      <arg name="Entidade&amp;lt;app.entity.Abastecimento&amp;gt;"/>
+    </mutation>
+    <field name="NAME">custoKm</field>
+    <comment h="80" pinned="false" w="160">Abastecimento</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^pE`]s,16;kA6rVw_^}i" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">custoKm</field>
+        <value name="VALUE">
+          <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Dq~:X)A(lm;adih2Ogkx" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="9$yCsB4JhuWN+cj:7ky7" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <value name="IF0">
+              <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="}m~%?XxE1xAn%aw|h@Z." origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
+                <value name="BOOL">
+                  <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7}5@sTe#sOJVSv}|26S^" inline="true" multilayer="false" namespace="cronapi.logic.Operations.isNullOrEmpty" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo%20ou%20vazio?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20a%20var%C3%ADavel%20%C3%A9%20nula%20ou%20vazia%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Par%C3%A2metro%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                    <mutation name="{{cronapi.logic.Operations.isNullOrEmpty}}" return-raw-type="cronapi.Var">
+                      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Parâmetro"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="2]Hzar!]822#MctWORfD" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                        <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                          <arg name="Objeto"/>
+                          <arg name="Caminho a percorrer"/>
+                        </mutation>
+                        <value name="PARAM0">
+                          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="HtFR@w%+u~:7=|LDx8q{" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">Entidade&lt;app.entity.Abastecimento&gt;</field>
+                          </block>
+                        </value>
+                        <value name="PARAM1">
+                          <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",bgpoQktS+rCae#i+f^:" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                            <mutation name="" return-raw-type="undefined"/>
+                            <field name="SELECT">km</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="@LH@A|fV^B25wqW3?YAB" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                <value name="IF0">
+                  <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Tet}9aDvbG@IOrWdP6Jp" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                    <field name="OP">NEQ</field>
+                    <value name="A">
+                      <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^1/[upa%(UhDNXl~EPV%" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                        <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                          <arg name="Objeto"/>
+                          <arg name="Caminho a percorrer"/>
+                        </mutation>
+                        <value name="PARAM0">
+                          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="u4XIyu`nY2!FmBt`4bOZ" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">Entidade&lt;app.entity.Abastecimento&gt;</field>
+                          </block>
+                        </value>
+                        <value name="PARAM1">
+                          <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=":6h22TA!tddFd?VL{Lg;" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                            <mutation name="" return-raw-type="undefined"/>
+                            <field name="SELECT">km</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="U+UpJq|6ZeE6FrjKfP6o" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="X/~ycW2`Fk#D%:et-5#}" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field name="VAR">custoKm</field>
+                    <value name="VALUE">
+                      <block colour="#5b6da5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ab8ozl/uw`UD2}RE^sD|" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                        <mutation items="2"/>
+                        <field name="OP1">DIVIDE</field>
+                        <value name="ARG0">
+                          <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$MGf2%+y4d!d5wuU)[;^" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                            <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                              <arg name="Objeto"/>
+                              <arg name="Caminho a percorrer"/>
+                            </mutation>
+                            <value name="PARAM0">
+                              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="!zq*MgB_3rg/nf3UG05O" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">Entidade&lt;app.entity.Abastecimento&gt;</field>
+                              </block>
+                            </value>
+                            <value name="PARAM1">
+                              <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="]q$j+G(B{q__f,tk@N1t" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                <mutation name="" return-raw-type="undefined"/>
+                                <field name="SELECT">valor</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?}co`gI[=Q9p]m^}G,HL" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                            <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                              <arg name="Objeto"/>
+                              <arg name="Caminho a percorrer"/>
+                            </mutation>
+                            <value name="PARAM0">
+                              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="sbP9@380[k~rt]isAZzI" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">Entidade&lt;app.entity.Abastecimento&gt;</field>
+                              </block>
+                            </value>
+                            <value name="PARAM1">
+                              <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="#En^{fV8w}jKG.=H?zku" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                <mutation name="" return-raw-type="undefined"/>
+                                <field name="SELECT">km</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="rO%BITcNn5I^9Y0)ksw9" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field name="VAR">custoKm</field>
+      </block>
+    </value>
+  </block>
+</blockly>
